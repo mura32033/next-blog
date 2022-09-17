@@ -17,9 +17,9 @@ export default function Article({ article }: Props) {
           alt={article.title}
           layout="fill"
           objectFit="cover"
-          style={{ filter: "blur(10px)" }}
+          style={{ filter: "blur(5px)" }}
         />
-        <h1 className="absolute z-10 text-slate-900 font-medium text-5xl left-8 mb-8">{article.title}</h1>
+        <h1 className="absolute z-10 text-slate-700 font-bold font-sans text-5xl left-8 mb-8">{article.title}</h1>
       </div>
       <div
         id="article-content"
@@ -27,7 +27,8 @@ export default function Article({ article }: Props) {
       >
         <BreadCrumb
           lists={[
-            { name: "ホーム", path: "/" },
+            { name: "Home", path: "/" },
+            { name: "Articles", path: "/article" },
             { name: article.title }
           ]}
         />
