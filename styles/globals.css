@@ -6,8 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Zen Maru Gothic', 'Noto Sans', sans-serif;
 }
 
 a {
@@ -20,13 +19,13 @@ a {
 }
 
 #article-content h2 {
-  @apply text-4xl font-bold mt-8 mb-4;
+  @apply font-sans text-4xl font-bold mt-8 mb-4;
 }
 #article-content h3 {
-  @apply text-3xl font-bold mt-8 mb-4;
+  @apply font-sans text-3xl font-bold mt-8 mb-4;
 }
 #article-content h4 {
-  @apply text-2xl font-bold mt-8 mb-4;
+  @apply font-sans text-2xl font-bold mt-8 mb-4;
 }
 #article-content ul {
   @apply list-disc ml-8 mt-5;
