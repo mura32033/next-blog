@@ -1,5 +1,5 @@
 import Link from "next/link";
-import breadCrumbStyles from "../styles/BreadCrumb.module.css";
+import breadCrumbStyles from "../styles/Breadcrumb.module.css";
 
 type Props = {
   lists: {
