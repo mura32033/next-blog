@@ -3,6 +3,7 @@ import { client } from "../../libs/client";
 import Image from "next/image";
 import type { Article } from "../../types/article";
 import BreadCrumb from "../../components/BreadCrumb";
+import Head from "next/head";
 
 type Props = {
   article: Article;
@@ -11,6 +12,9 @@ type Props = {
 export default function Article({ article }: Props) {
   return (
     <div className="flex flex-col">
+      <Head>
+        <title>{article.title} - murasan blog</title>
+      </Head>
       <div className="relative flex flex-row h-80 w-full items-end">
         <Image
           src={article.eyecatch.url}
